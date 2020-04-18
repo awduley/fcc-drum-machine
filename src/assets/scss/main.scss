@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+#drum-machine {
+  font-family: 'Ubuntu', sans-serif;
+  background: radial-gradient(#ff0000, #000);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  text-align: center;
+  margin: 2rem;
+  width: 400px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.drum-pad {
+  background: rgba(0, 0, 0, .8);
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 6rem;
+  width: 7rem;
+  margin:.4rem;
+  border-radius: 10%; 
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0 0 16px #000;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(100, 100, 100, 1);
+    color: #000;
+  }
+}
